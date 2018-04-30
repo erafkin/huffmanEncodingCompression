@@ -191,14 +191,6 @@ public class Huffman {
 	public static void main(String[]args) {
 		
 		Huffman test = new Huffman("inputs/WarAndPeace.txt");
-		System.out.println(test.map);
-		test.prioritize(test.map);
-		System.out.println(test.queue);
-		System.out.println(test.queue.peek());
-		test.tree(test.queue);
-		System.out.println(test.tree);
-		test.encode(test.tree);
-		System.out.println(test.encodedMap.toString());
 		try {
 			test.compress();
 		} catch (IOException e) {
